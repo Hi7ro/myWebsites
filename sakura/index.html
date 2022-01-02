@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="title">SAKURA RAMEN - THE BEST RAMEN IN TOWN</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="nav-bar mobile-sight">
+      <img class="nav-brand" src="./assets/saku.png" alt="sakura-logo">
+      <div class="nav-list">
+        <a id="menu-bar" class="hide-mobile" href="#menu">MENU</a>
+        <a id="location-bar" class="hide-mobile" href="#location">LOCATION</a>
+        <a id="about-bar" class="hide-mobile" href="#about">ABOUT</a>
+        <a class="tel-btn" href="tel: 0176 54564534"> <img src="./assets/phone.png"> 0176 54564534 </a>
+      </div>
+    </div>
+    <div class="language">
+      <a href="#" onclick="english()">🏴󠁧󠁢󠁥󠁮󠁧󠁿</a>
+      <a href="#" onclick="german()">🇩🇪</a>
+      <a href="#" onclick="spanish()">🇪🇸</a>
+      <a href="#" onclick="russian()">🇷🇺</a>
+      <a href="#" onclick="japanese()">🇯🇵</a>
+    </div>
+
+    <div class="headline mobile-sight">
+      <h1 id="headline">SAKURA RAMEN</h1>
+      <p id="headline-span">THE BEST RAMEN IN TOWN</p>
+    </div>
+  </header>
+  <main>
+    <h2 id="order-headline" class="text-red">HOW TO ORDER</h2>
+    <div class="sub-headline mobile-sight">
+      <div class="noodle flex">
+        <img src="./assets/bowl_icon.jpg" alt="bowl_icon">
+        <p id="noodle"> Pick <br> Your Noodle</p>
+      </div>
+      <div class="broth flex">
+        <img src="./assets/broth_icon.png" alt="broth_icon">
+        <p id="broth">Pick <br> Your Broth</p>
+      </div>
+      <div class="toppings flex">
+        <img src="./assets/eggs_icon.jpg" alt="topping_icon">
+        <p id="toppings">Pick Your <br> Toppings</p>
+      </div>
+    </div>
+    <div id="menu" class="menu-section">
+      <h2 id="menu-text" class="text-red">OUR MENU</h2>
+
+      <div class="ramen section-tonkasu ">
+        <div class="ramen-tonkasu">
+          <img src="./assets/r1.png" alt="ramen">
+        </div>
+        <div class="ramen-option">
+          <span id="tonkasu">Tonkasu Ramen</span>
+          <table>
+            <tr>
+              <td class="chicken">CHICKEN</td>
+              <td>11.95€</td>
+            </tr>
+            <tr>
+              <td class="beef">BEEF</td>
+              <td>12.95€</td>
+            </tr>
+            <tr>
+              <td class="shrimp">SHRIMP</td>
+              <td>13.95€</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="ramen section-spicy-miso">
+        <div class="ramen-option">
+          <span id="spicyMiso">Spicy Miso Ramen</span>
+          <table>
+            <tr>
+              <td class="chicken">CHICKEN</td>
+              <td>11.95€</td>
+            </tr>
+            <tr>
+              <td class="beef">BEEF</td>
+              <td>12.95€</td>
+            </tr>
+            <tr>
+              <td class="shrimp">SHRIMP</td>
+              <td>13.95€</td>
+            </tr>
+          </table>
+        </div>
+        <div class="ramen-spicy-miso">
+          <img src="./assets/r2.png" alt="ramen">
+        </div>
+      </div>
+
+      <div class="ramen section-shio">
+        <div class="ramen-shio">
+          <img src="./assets/r3.png" alt="ramen">
+        </div>
+        <div class="ramen-option">
+          <span id="shio">Shio Ramen</span>
+          <table>
+            <tr>
+              <td class="chicken">CHICKEN</td>
+              <td>11.95€</td>
+            </tr>
+            <tr>
+              <td class="beef">BEEF</td>
+              <td>12.95€</td>
+            </tr>
+            <tr>
+              <td class="shrimp">SHRIMP</td>
+              <td>13.95€</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div id="location">
+      <h2 id="findUs" class="text-red">FIND US AT</h2>
+      <div class="location adress">
+        <img src="./assets/LO.png" alt="">
+        Kapuzinerstraße 31, München, BY 80337
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.207967177319!2d11.559014615604854!3d48.12551265998022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479ddf44d01affc5%3A0xe7a07e0710be63e8!2sKapuzinerstra%C3%9Fe%2031%2C%2080337%20M%C3%BCnchen%2C%20Germany!5e0!3m2!1sen!2sat!4v1639160217063!5m2!1sen!2sat"
+        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+  </main>
+  <footer>
+    <img src="./assets/saklogo.png" alt="sakura-logo">
+    <div class="socials">
+      <a href="#"><img src="./assets/fb.png" alt="facebook"></a>
+      <a href="#"><img src="./assets/ins.png" alt="instagram"></a>
+      <a href="#"><img src="./assets/tripad.png" alt="tripad"></a>
+    </div>
+  </footer>
+  <script src="./main.js"></script>
+</body>
+
+</html>
