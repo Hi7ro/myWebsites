@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: unset;
+  list-style: none;
+}
+
+p {
+  font-size: 20px;
+}
+
+a {
+  color: unset;
+}
+
+a:active {
+  color: rgb(216, 184, 108);
+}
+
+#content {
+  height: 100vh;
+  background-color: lightcyan;
+  display: flex;
+  justify-content: space-between;
+}
+
+.d-none {
+  display: none;
+}
+
+button {
+  border-radius: 20px;
+  width: 55px;
+  background-color: rgba(188, 196, 193, 0.562);
+}
+
+i {
+  cursor: pointer;
+}
+
+.flex {
+  padding-top: 5px;
+  width: 40vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

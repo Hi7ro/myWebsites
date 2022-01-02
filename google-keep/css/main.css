@@ -1,0 +1,69 @@
+.main-content {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.notes {
+  background-color: white;
+  padding: 10px;
+  width: max-content;
+  height: fit-content;
+  border: 1px solid rgb(172, 171, 171);
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px grey;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 1s ease-in-out;
+}
+
+.notes i {
+  font-size: 16px;
+  padding-right: 5px;
+}
+
+input {
+  padding: 10px;
+  width: 40vw;
+  height: 5vh;
+  font-size: 1.3em;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.div-textbox {
+  background-color: white;
+  width: 200px;
+  height: 100px;
+}
+
+textarea {
+  width: 40vw;
+  font-size: 1.3em;
+  height: 20vh;
+  resize: none;
+  border-style: none;
+  transition: all 225ms ease-in-out;
+}
+
+#note-block {
+  display: flex;
+  flex-flow: wrap;
+  overflow-y: scroll;
+  width: fit-content;
+  height: max-content;
+}
+
+#note-block div {
+  margin: 10px;
+  padding: 10px;
+  max-width: 300px;
+  height: max-content;
+  box-shadow: 1px 1px 5px rgb(131, 131, 131);
+  border-radius: 10px;
+}

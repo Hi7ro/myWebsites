@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mein Restaurant</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      scroll-behavior: smooth;
+      font-family: 'Quicksand', sans-serif;
+      margin: 0px;
+      box-sizing: border-box;
+    }
+
+    .header img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+
+    .bg1 {
+      background-color: aliceblue;
+      padding-left: 140px !important;
+      padding-right: 140px !important;
+      padding: 8px;
+    }
+
+    .bg2 {
+
+      padding-left: 140px !important;
+      padding-right: 140px !important;
+      padding: 8px;
+      background-color: rgba(255, 136, 0, 0.5);
+
+    }
+
+    .nav {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      padding: 8px;
+    }
+
+    .nav a {
+      color: rgb(119, 194, 243);
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    .nav a:hover {
+      text-decoration: underline;
+
+    }
+
+    footer {
+      background-color: #545454;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .footer-child {
+      padding: 10px;
+      width: 25%;
+      color: white;
+    }
+
+    .footer-child a {
+      text-decoration: none;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="./img/bar.jpg" alt="Restaurant_Titelbild" class="titelbild">
+    </div>
+    <div class="nav">
+      <a href="#restaurant" title="Entstehung des Restaurant">Unser Restaurant</a>
+      <a href="#opening-hours">Öffnungszeiten</a>
+      <a href="#route" title="Wie du zu uns kommst">Anfahrt</a>
+      <a href="#menu">Highlight Menü's</a>
+      <a href="#contact">Kontakt</a>
+      <a href="#blog" title="Lies dich in unserem Blog ein">Blog</a>
+      <a href="#impressum">Impressum</a>
+    </div>
+    <div class="bg1" id="restarant">
+      <h1>Herzlich Willkommen</h1>
+      <br>
+      <br>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+        In, omnis? Lorem ipsum dolor sit amet consectetur <br>
+        adipisicing elit. Quis nesciunt perferendis temporibus, <br>
+        consequuntur non laborum quia corporis adipisci
+        consectetur vitae.</p>
+      <br>
+    </div>
+    <div class="bg2" id="opening-hours">
+      <b>Meine Öffnungszeiten</b> <br>
+      Mo - Fr 12.00 - 23.00 Uhr <br>
+      Sa 11.00 - 24.00 Uhr <br>
+      So 11.00 -24.00 Uhr <br>
+    </div>
+    <div class="bg1" id="route">
+      <h2>Anfahrt</h2>
+      <i>Hier ein <u>zufälliger</u> Text wie du zur Goetherstraße gelangst ;D xoxo</i>
+      <br>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4680.357869532528!2d13.336312468371954!3d48.442350390356594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47745ac437943855%3A0xdabbc518e310b3bf!2zR2V0csOkbmtlIEdzdMO2dHRs!5e0!3m2!1sen!2sat!4v1638904939193!5m2!1sen!2sat"
+        width="700" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="bg2" id="menu">
+      <h2>Unsere Highlight's</h2>
+      <table>
+        <tr>
+          <td>1</td>
+          <td>Veggie Ramen</td>
+          <td>18,40 €</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Vegane Ente</td>
+          <td>23,40 €</td>
+          <td>*Optional mit Reis oder Nudeln</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Club Ramen</td>
+          <td>17,80 €</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>California Maki</td>
+          <td>18,20 €</td>
+          <td>*Diverses Gemüse zur Auswahl</td>
+        </tr>
+
+      </table>
+      <p>Hier hast du noch einen überblick über unsere Karte als
+        <a href="./downloads/Tagesmenü.txt" target="_blank">
+          PDF</a>.</p>
+    </div>
+    <div class="bg1" id="contact">
+      <h2>Kontakt</h2>
+      <p>Sie können uns gerne Telefonisch oder per E-Mail erreichen.</p>
+      <p>Tel.: <a href="Tel:+43 660 124 95 37">+43 660 124 95 37</a> </p>
+      <p>E-Mail: <a href="mailto:info@rahmenbar.com">info@rahmenbar.com</a></p>
+
+    </div>
+    <footer>
+      <div class="footer-child" id="impressum">
+        © 2021 - Mein Restaurant
+      </div>
+      <div class="footer-child">
+        <a href="#">Impressum</a> <br>
+        <a href="#">Kontakt</a> <br>
+        <a href="#">Datenschutz</a> <br>
+        <a href="#"> Cookie - Richtlinien</a>
+      </div>
+    </footer>
+
+
+  </div>
+
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/cookie-bar/cookiebar-latest.min.js?always=1&noGeoIp=1&showNoConsent=1"></script>
+</body>
+
+</html>
