@@ -71,7 +71,7 @@ function addNote() {
   if (inputTitle.value || inputText.value) {
     title.push(inputTitle.value);
     notes.push(inputText.value);
-  } else alert('Gib zuerst einen Wert ein bevor du eine Notiz speicherst!');
+  } else alert('Gib einen Wert ein bevor du eine Notiz speicherst!');
 
   render();
   save();
@@ -85,7 +85,9 @@ function save() {
 }
 
 function load() {
-  title = JSON.parse(localStorage.getItem('title', titleAsText));
-  notes = JSON.parse(localStorage.getItem('notes', notesAsText));
+  let titleAsText = localStorage.getItem('title');
+  let notesAsText = localStorage.getItem('notes')
 
+  title = JSON.parse(titleAsText);
+  notes = JSON.parse(notesAsText);
 }
