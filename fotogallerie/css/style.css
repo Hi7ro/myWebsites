@@ -2,6 +2,7 @@
 *{
   box-sizing: border-box;
   margin: 0;
+  scroll-behavior: smooth;
 }
 body{
   background-color:#fef0f0;
@@ -12,15 +13,27 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 50vh;
-
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h1{
   font-family: 'The Nautigal', cursive;
   font-size: 100px;
-  padding-top: 1em;
-  text-align: center;
+}
+.btn{
+  border-radius: 30px;
+  background-color: rgba(235, 185, 91, 0.425);
+  width: 100px;
+  height: 40px;
+  font-family: 'the nautigal';
+  font-size: 1.5em;
+}
+.btn:hover{
+  background-color: rgba(0, 255, 255, 0.096);
 }
 #image-container{
   display: flex;
@@ -40,11 +53,19 @@ h1{
   display: block;
   width: 400px;
   object-fit: cover;
-  filter: sepia(70%);
+  filter: sepia(60%);
   cursor: pointer;
   transition: all 350ms ease-in-out;
 }
 .img-box img:hover{
   transform: scale(1.1);
-  filter: sepia(10%);
+  filter: sepia(0);
+}
+.d-none{
+  display: none;
+}
+
+
+@media only screen and (max-width: 1320px) {
+  
 }
