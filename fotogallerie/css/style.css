@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+body{
+  background-color:#fef0f0;
+}
+.headline-section{
+  background-image: url('../img/background-image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+
+}
+
+h1{
+  font-family: 'The Nautigal', cursive;
+  font-size: 100px;
+  padding-top: 1em;
+  text-align: center;
+}
+#image-container{
+  display: flex;
+  flex-flow: wrap;
+  height: 100vh;
+  width: 100%;
+}
