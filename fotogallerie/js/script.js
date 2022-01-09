@@ -22,7 +22,7 @@ function columnQuery(x){
     column3.classList.add('d-none');
 
     for(let i=0; i < images.length; i++) {
-    
+     
       column1.innerHTML += `
       <div class="img-box">
         <img src="${images[i]}">
