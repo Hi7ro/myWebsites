@@ -20,7 +20,6 @@ function renderImages(){
 function columnQuery(x){
   if(x.matches){
     column3.classList.add('d-none');
-
     for(let i=0; i < images.length; i++) {
      
       column1.innerHTML += `
