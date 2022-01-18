@@ -11,11 +11,11 @@ let imgContainer = document.getElementById('image-container');
 let column1 = document.getElementsByClassName('photos_column')[0];
 let column2 = document.getElementsByClassName('photos_column')[1];
 let column3 = document.getElementsByClassName('photos_column')[2];
+let x = window.matchMedia('(max-width: 900px)');
 
 function renderImages(){
-  let x = window.matchMedia('(max-width: 1100px)');
-  columnQuery(x);
-  x.addEventListener(columnQuery());
+
+  columnQuery(x)
 }
 
 function columnQuery(x){
@@ -36,7 +36,7 @@ function columnQuery(x){
       </div>`;
       i++;
   }
-}else{
+}else if(x.matches == false){
   column3.classList.remove('d-none');
 
   for(let i=0; i < images.length; i++) {
@@ -65,7 +65,6 @@ function columnQuery(x){
     i = i + 2;
   }
 }
-
 };
 
 

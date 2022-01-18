@@ -51,7 +51,7 @@ h1{
 }
 .img-box img{
   display: block;
-  width: 400px;
+  width: 27vw;
   object-fit: cover;
   filter: sepia(60%);
   cursor: pointer;
@@ -63,9 +63,4 @@ h1{
 }
 .d-none{
   display: none;
-}
-
-
-@media only screen and (max-width: 1320px) {
-  
 }
