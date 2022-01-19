@@ -16,7 +16,7 @@ let x = window.matchMedia('(max-width: 900px)');
 function renderImages(){
 
   columnQuery(x)
-}
+} 
 
 function columnQuery(x){
   if(x.matches){
@@ -36,7 +36,7 @@ function columnQuery(x){
       </div>`;
       i++;
   }
-}else if(x.matches == false){
+}else{
   column3.classList.remove('d-none');
 
   for(let i=0; i < images.length; i++) {
@@ -64,6 +64,7 @@ function columnQuery(x){
     </div>`;
     i = i + 2;
   }
+  
 }
 };
 
