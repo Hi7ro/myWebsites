@@ -8,64 +8,76 @@ let images = [
 
 let imgContainer = document.getElementById('image-container');
 
-let column1 = document.getElementsByClassName('photos_column')[0];
-let column2 = document.getElementsByClassName('photos_column')[1];
-let column3 = document.getElementsByClassName('photos_column')[2];
-let x = window.matchMedia('(max-width: 900px)');
 
 function renderImages(){
-
-  columnQuery(x)
-} 
-
-function columnQuery(x){
-  if(x.matches){
-    column3.classList.add('d-none');
-    for(let i=0; i < images.length; i++) {
-     
-      column1.innerHTML += `
+  for(let i = 0; i < images.length; i++){
+    imgContainer.innerHTML += `
       <div class="img-box">
         <img src="${images[i]}">
-      </div>`;
-      i++;
-    }
-    for(let i=1; i < images.length; i++){
-      column2.innerHTML += `
-      <div class="img-box">
-        <img src="${images[i]}">
-      </div>`;
-      i++;
-  }
-}else{
-  column3.classList.remove('d-none');
+      </div>
+    `;
+   }
 
-  for(let i=0; i < images.length; i++) {
-    
-    column1.innerHTML += `
-    <div class="img-box">
-      <img src="${images[i]}">
-    </div>`;
-    i = i + 2;
 
-  }
-  
-  for(let i=1; i < images.length; i++){
-    column2.innerHTML += `
-    <div class="img-box">
-      <img src="${images[i]}">
-    </div>`;
-    i = i + 2;
-  }
-
-  for(let i=2; i < images.length; i++){
-    column3.innerHTML += `
-    <div class="img-box">
-      <img src="${images[i]}">
-    </div>`;
-    i = i + 2;
-  }
-  
 }
-};
+// let column1 = document.getElementsByClassName('photos_column')[0];
+// let column2 = document.getElementsByClassName('photos_column')[1];
+// let column3 = document.getElementsByClassName('photos_column')[2];
+// let x = window.matchMedia('(max-width: 900px)');
+
+// function renderImages(){
+
+//   columnQuery(x)
+// } 
+
+// function columnQuery(x){
+//   if(x.matches){
+//     column3.classList.add('d-none');
+//     for(let i=0; i < images.length; i++) {
+     
+//       column1.innerHTML += `
+//       <div class="img-box">
+//         <img src="${images[i]}">
+//       </div>`;
+//       i++;
+//     }
+//     for(let i=1; i < images.length; i++){
+//       column2.innerHTML += `
+//       <div class="img-box">
+//         <img src="${images[i]}">
+//       </div>`;
+//       i++;
+//   }
+// }else{
+//   column3.classList.remove('d-none');
+
+//   for(let i=0; i < images.length; i++) {
+    
+//     column1.innerHTML += `
+//     <div class="img-box">
+//       <img src="${images[i]}">
+//     </div>`;
+//     i = i + 2;
+
+//   }
+  
+//   for(let i=1; i < images.length; i++){
+//     column2.innerHTML += `
+//     <div class="img-box">
+//       <img src="${images[i]}">
+//     </div>`;
+//     i = i + 2;
+//   }
+
+//   for(let i=2; i < images.length; i++){
+//     column3.innerHTML += `
+//     <div class="img-box">
+//       <img src="${images[i]}">
+//     </div>`;
+//     i = i + 2;
+//   }
+  
+// }
+// };
 
 

@@ -50,9 +50,8 @@ h1{
   height: fit-content;
 }
 .img-box img{
-  display: block;
   width: 27vw;
-  object-fit: cover;
+  flex: 1;
   filter: sepia(60%);
   cursor: pointer;
   transition: all 350ms ease-in-out;
@@ -63,4 +62,22 @@ h1{
 }
 .d-none{
   display: none;
+} 
+@media only screen and (max-width: 800px){
+  .headline-section h1{
+    text-align: center;
+    font-size: 80px;
+  }
+  .img-box{
+    width: 36vw;
+  }
+}
+@media only screen and (max-width: 500px){
+.headline-section h1{
+  text-align: center;
+  font-size: 80px;
+}
+.img-box{
+  width: 34vw;
+}
 }
