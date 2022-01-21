@@ -6,20 +6,31 @@ let images = [
   './img/img17.jpg', './img/img18.jpg', './img/img19.jpg', './img/img20.jpg', 
   './img/img21.jpg'];
 
-let imgContainer = document.getElementById('image-container');
-
-
-function renderImages(){
-  for(let i = 0; i < images.length; i++){
-    imgContainer.innerHTML += `
-      <div class="img-box">
-        <img src="${images[i]}">
-      </div>
-    `;
-   }
-
-
-}
+  let imgContainer = document.getElementById('image-container');
+  let bigScreen = document.getElementsByClassName('bigScreen');
+  let symbols = document.getElementsByClassName('bigScreen-symbols')
+  
+  function renderImages(){
+  
+    for(let i=0; i < images.length; i++){
+      imgContainer.innerHTML += `
+        <div class="img-box">
+          <img onclick="openImg()" src="${images[i]}">
+        </div>
+      `;
+    }
+  };
+  
+  function openImg(){
+    imgContainer.classList.add('d-none');
+    alert('You touched picture soundso');
+  }
+  
+  function closeImg(){}
+  
+  function previousImg(){}
+  
+  function nextImg(){}
 // let column1 = document.getElementsByClassName('photos_column')[0];
 // let column2 = document.getElementsByClassName('photos_column')[1];
 // let column3 = document.getElementsByClassName('photos_column')[2];
