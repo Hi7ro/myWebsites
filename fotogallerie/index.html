@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meine Fotogallerie</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
+
 <body onload="renderImages()">
   <header>
     <div class="headline-section">
-      <h1>Meine FotoGallerie</h1>
+      <h1>Meine FotoGalerie</h1>
       <form action="#image-container">
-        <button class="btn" >Explore</button>
+        <button class="btn">Explore</button>
       </form>
-      
+
     </div>
   </header>
   <main>
     <div id="image-container">
-      <div class="photos_column"></div>
-      <div class="photos_column"></div>
-      <div class="photos_column"></div>
-
+    </div>
+    <div class="bigScreen d-none"></div>
+    <div class="bigScreen-symbols d-none">
+      <i class="fas fa-times"></i>
+      <i class="fas fa-chevron-circle-left"></i>
+      <i class="fas fa-chevron-circle-right"></i>
     </div>
   </main>
- 
+
 
   <script src="./js/script.js"></script>
 </body>
+
 </html>

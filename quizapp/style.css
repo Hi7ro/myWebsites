@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: unset;
+}
+
+body {
+  background-color: darkred !important;
+}
+
+.container {
+  min-height: 100vh;
+  background-color: darkred !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainQuiz {
+  width: 35rem;
+}
+
+.quizFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
