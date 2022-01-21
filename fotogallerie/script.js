@@ -7,13 +7,26 @@ let images = [
   './img/img21.jpg'];
 
 let imgContainer = document.getElementById('image-container');
-
+let bigScreen = document.getElementsByClassName('bigScreen');
+let symbols = document.getElementsByClassName('bigScreen-symbols')
 
 function renderImages(){
 
-  imgContainer.innerHTML += `
-    div class="img-box">
-      <img src="${images[i]}">
-    </div>`;
-
+  for(let i=0; i < images.length; i++){
+    imgContainer.innerHTML += `
+      <div class="img-box">
+        <img onclick="openImg(${i})" src="${images[i]}">
+      </div>
+    `;
+  }
 };
+
+function openImg(){
+  imgContainer.classList.add('d-none');
+}
+
+function closeImg(){}
+
+function previousImg(){}
+
+function nextImg(){}
