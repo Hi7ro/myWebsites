@@ -17,9 +17,9 @@
 
 </head>
 
-<body>
+<body onload="init()">
   <!------------------- navbar------------------->
-  <nav class="navbar navbar-light bg-light">
+  <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Quizapp</a>
     </div>
@@ -28,41 +28,41 @@
 
   <!------------------- main-section ------------------->
   <div class="container">
-    <div class="mainQuiz card">
+    <div class="card mainQuiz">
       <img src="./img/riddle.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h1>Hier kommt die Frage</h1>
+        <h1 id="question">Hier kommt die Frage</h1>
 
         <div class="card mb-3">
           <div class="card-body">
-            <p>Antwort</p>
+            <p id="answer_1">Antwort</p>
           </div>
         </div>
 
         <div class="card mb-3">
           <div class="card-body">
-            <p>Antwort</p>
+            <p id="answer_2">Antwort</p>
           </div>
         </div>
 
         <div class="card mb-3">
           <div class="card-body">
-            <p>Antwort</p>
+            <p id="answer_3">Antwort</p>
           </div>
         </div>
 
         <div class="card mb-3">
           <div class="card-body">
-            <p>Antwort</p>
+            <p id="answer_4">Antwort</p>
           </div>
         </div>
 
-        <div class="quizFooter">
+        <div class="quizFooter pt-2">
           <span>
-            <b>1</b> von <b>5</b> Fragen
+            <b id="questionsStart">1</b> von <b id="questionsEnd"> 3</b> Fragen
           </span>
           <span>
-            <button class="btn btn-dark">next question</button>
+            <button class="btn btn-dark" onclick="nextQuestion()">next question</button>
           </span>
         </div>
 
@@ -73,7 +73,7 @@
 
 
 
-  <script src="main.js"></script>
+  <script src="./main.js"></script>
 </body>
 
 </html>
