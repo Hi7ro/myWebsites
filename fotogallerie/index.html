@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./img/icon.jpg">
   <title>Meine Fotogallerie</title>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -12,24 +13,23 @@
 </head>
 
 <body onload="renderImages()">
-  <header>
+  <header id="header">
     <div class="headline-section">
       <h1>Meine FotoGalerie</h1>
       <form action="#image-container">
         <button class="btn">Explore</button>
       </form>
-
     </div>
   </header>
+
   <main>
-    <div id="imgContainer">
+    <div>
+      <div id="image-container"></div>
     </div>
-    <div id="bigScreen" class="big-screen d-none"></div>
-    <div id="bigScreenSymbols" class="big-screen-symbols d-none">
-      <i class="fas fa-times"></i>
-      <i class="fas fa-chevron-circle-left"></i>
-      <i class="fas fa-chevron-circle-right"></i>
+
+    <div id="bigScreen" class="bigScreen d-none">
     </div>
+
   </main>
 
 
