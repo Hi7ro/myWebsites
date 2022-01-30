@@ -1,0 +1,8 @@
+body {
+  margin: unset;
+  box-sizing: border-box;
+}
+
+#navbar {
+  background-color: #fb6100;
+}
