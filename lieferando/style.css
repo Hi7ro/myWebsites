@@ -1,8 +1,43 @@
 body {
   margin: unset;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
+
 
 #navbar {
   background-color: #fb6100;
+  color: white;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-brand {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.section-address {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: solid 2px;
+}
+
+.section-lang {
+  display: flex;
+}
+
+#lang {
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.section-lang i {
+  font-size: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
