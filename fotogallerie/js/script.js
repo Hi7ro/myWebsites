@@ -29,8 +29,8 @@ function openImg(i) {
   <div id="bigScreenSymbols" class="bigScreen-symbols">
   <i class="fas fa-times exit" onclick="closeImg()"></i>
   <div id="left-right">
-    <i class="fas fa-chevron-circle-left" onclick="previousImg(${i})"></i>
-    <i class="fas fa-chevron-circle-right" onclick="nextImg(${i})"></i>
+    <i class="fas fa-chevron-circle-left icon-left" onclick="previousImg(${i})"></i>
+    <i class="fas fa-chevron-circle-right icon-right" onclick="nextImg(${i})"></i>
   </div>
   `;
 
