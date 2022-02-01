@@ -8,5 +8,7 @@
 <i class="fas fa-chevron-right"></i>
 <i class="fas fa-info"></i>
 <i class="fas fa-search"></i>
+<i class="fas fa-star-half-alt"></i>
+<i class="fas fa-star"></i>
 
 \_/

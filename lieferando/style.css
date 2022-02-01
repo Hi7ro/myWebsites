@@ -1,43 +1,339 @@
-body {
+* {
   margin: unset;
   box-sizing: border-box;
   font-family: sans-serif;
 }
 
 
+
+/*! ******************** NAV SECTION *********************/
 #navbar {
   background-color: #fb6100;
   color: white;
   height: 70px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .section-brand {
   display: flex;
   align-items: center;
   margin-left: 20px;
+  cursor: pointer;
+}
+
+.section-brand img {
+  margin-left: 10px;
+  margin-bottom: 5px;
 }
 
 .section-address {
   height: 20px;
   display: flex;
   align-items: center;
+  justify-content: ;
   border-bottom: solid 2px;
+  font-size: 14px;
+  cursor: pointer;
+  overflow-x: hidden;
 }
 
 .section-lang {
   display: flex;
+  align-items: center;
 }
 
 #lang {
-  border: 2px solid white;
+  height: 20px;
+  width: 20px;
+  border: 3px solid white;
   border-radius: 50%;
+  cursor: pointer;
+
 }
 
 .section-lang i {
   font-size: 20px;
   margin-right: 20px;
   margin-left: 20px;
+  cursor: pointer;
 }
+
+
+/*! ******************** X NAV SECTION X *********************/
+
+/* +++ Wrapper +++ */
+.wrapper {
+  display: flex;
+}
+
+
+main {
+  height: 100vh;
+  width: 80vw;
+}
+
+aside {
+  background-color: black;
+  height: 100vh;
+  width: 20vw;
+  position: fixed;
+  right: 0;
+}
+
+/* ++++++++++++ */
+
+/* ******************** MAIN MENU *********************/
+
+.header-img img {
+  max-width: 80vw;
+}
+
+.img-box {
+  background-color: #fb6100;
+  background-image: url('./img/burger_102.jpg');
+  background-position: center;
+  width: 80vw;
+  height: 200px;
+  object-fit: cover;
+  position: relative;
+}
+
+.header-img .halis-logo {
+  border: 1px solid transparent;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+  position: absolute;
+  bottom: -70px;
+  left: calc(50% - 86px);
+}
+
+
+.section-review {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: larger;
+  font-weight: 550;
+  margin-bottom: 3px !important;
+}
+
+.section-review span i {
+  color: #fb6100;
+  font-family: 14px;
+}
+
+.section-review a {
+  font-size: 14px;
+  margin-left: 5px;
+  color: #fb6100;
+}
+
+.about-info {
+  display: flex;
+}
+
+.about {
+  border: 1px solid #ebe9e9;
+  padding: 10px;
+  color: #125fca;
+  font-size: 10px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.favorite-restaurant {
+  border: 1px solid #ebe9e9;
+  padding: 10px;
+  color: #fb6100;
+  font-size: 10px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.short-message {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.first-message {
+  color: #adadad;
+  font-size: 12px;
+}
+
+.main-message {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  font-size: 13px;
+  max-width: 580px;
+  overflow: hidden;
+  max-height: 13px;
+}
+
+.read-more {
+  width: 190px;
+  color: #fb6100;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f8f5f2;
+  width: 100%;
+  padding: 20px;
+  margin: 0 !important;
+  display: flex;
+}
+
+.search-bar i {
+  cursor: pointer;
+}
+
+.ul {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ul li {
+  list-style-type: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.list-item {
+  cursor: pointer;
+}
+
+.list-item:first-child {
+  background-color: #fb6100;
+  border-radius: 30px;
+  color: white;
+  padding: 10px;
+}
+
+.popular-dishes {
+  margin: 10px;
+}
+
+.popular-dishes h2 {
+  margin-bottom: 10px;
+  padding: 20px;
+  background-color: #f8f5f2;
+  font-size: larger;
+  font-weight: 500;
+}
+
+.menu-card {
+  margin: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 2px;
+  padding: 20px;
+  position: relative;
+  transition: all 175ms ease-in-out;
+}
+
+.menu-card:hover {
+  cursor: pointer;
+  transition: all 125ms ease-in-out;
+  border-color: #125fca;
+}
+
+
+.menu-card .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-card .card-info {
+  display: flex;
+}
+
+.burger-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 5px;
+  width: 20px;
+  height: 20px;
+  color: #125fca;
+  border: 1px solid #125fca;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.menu-card .add-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid #ebe9e9;
+  padding: 10px;
+  color: #125fca;
+  font-size: 16px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu-card .card-info i {
+  font-size: 10px;
+}
+
+
+.menu-card .card ul {
+  color: grey;
+  padding: 10px 12px !important;
+}
+
+.menu-card .card ul li {
+  font-weight: 100;
+  font-size: small;
+}
+
+.menu-card .choice-of {
+  color: grey;
+  font-size: 12px;
+}
+
+.menu-card .price {
+  margin-top: 10px;
+  color: #fb6100;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+
+
+
+/* ******************** X MAIN MENU X *********************/
+
+/*! ********************  ASIDE *********************/
+
+
+/*! ******************** X ASIDE X *********************/
