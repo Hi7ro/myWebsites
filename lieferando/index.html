@@ -91,7 +91,7 @@
         <div class="dishes">
           <h2>Popular Dishes</h2>
 
-          <div class="menu-card">
+          <div class="menu-card" onclick="addToBasket(0)">
             <div class="add-menu">
               <i class="fas fa-plus"></i>
             </div>
@@ -116,7 +116,7 @@
             </div>
           </div>
 
-          <div class="menu-card">
+          <div class="menu-card" onclick="addToBasket(1)">
             <div class="add-menu">
               <i class="fas fa-plus"></i>
             </div>
@@ -141,7 +141,7 @@
             </div>
           </div>
 
-          <div class="menu-card">
+          <div class="menu-card" onclick="addToBasket(2)">
             <div class="add-menu">
               <i class="fas fa-plus"></i>
             </div>
@@ -168,7 +168,7 @@
 
           </div>
 
-          <div class="menu-card">
+          <div class="menu-card" onclick="addToBasket(3)">
             <div class="add-menu">
               <i class="fas fa-plus"></i>
             </div>
@@ -184,7 +184,7 @@
             </div>
           </div>
 
-          <div class="menu-card">
+          <div class="menu-card" onclick="addToBasket(4)">
             <div class="add-menu">
               <i class="fas fa-plus"></i>
             </div>
@@ -202,7 +202,7 @@
             </div>
           </div>
 
-          <div class="menu-card">
+          <div class="menu-card" onclick="addToBasket(5)">
             <div class="add-menu">
               <i class="fas fa-plus"></i>
             </div>
@@ -221,7 +221,7 @@
               <span class="price">9,80€</span>
             </div>
           </div>
-          <div class="menu-card">
+          <div class="menu-card" onclick="addToBasket(6)">
             <div class="add-menu">
               <i class="fas fa-plus"></i>
             </div>
@@ -242,7 +242,7 @@
             </div>
           </div>
 
-          <div class="menu-card">
+          <div class="menu-card" onclick="addToBasket(7)">
             <div class="add-menu">
               <i class="fas fa-plus"></i>
             </div>
@@ -259,7 +259,7 @@
               <span class="price">9,80€</span>
             </div>
           </div>
-          <div class="menu-card">
+          <div class="menu-card" onclick="addToBasket(8)">
             <div class="add-menu">
               <i class="fas fa-plus"></i>
             </div>
@@ -277,7 +277,7 @@
               <span class="price">10,50€</span>
             </div>
           </div>
-          <div class="menu-card">
+          <div class="menu-card" onclick="addToBasket(9)">
             <div class="add-menu">
               <i class="fas fa-plus"></i>
             </div>
@@ -293,7 +293,7 @@
               <span class="price">6,90€</span>
             </div>
           </div>
-          <div class="menu-card">
+          <div class="menu-card" onclick="addToBasket(10)">
             <div class="add-menu">
               <i class="fas fa-plus"></i>
             </div>
@@ -307,7 +307,7 @@
               <span class="price">3,90€</span>
             </div>
           </div>
-          <div class="menu-card">
+          <div class="menu-card" onclick="addToBasket(11)">
             <div class="add-menu">
               <i class="fas fa-plus"></i>
             </div>
@@ -331,13 +331,18 @@
         <div class="section-header">
           <span>Basket</span>
         </div>
-        <div id="basket-section" class="basket-section">
+
+        <div id="basket-section" class="basket-section d-none">
+          <!-- d-none / switch-->
           <i class="fas fa-shopping-basket"></i>
           <p>Fill your basket</p>
           <span>Add some tasty food from the menu and order your food.</span>
         </div>
-        <div id="basket-checkout" class="basket-checkout d-none">
+
+        <div id="basket-checkout" class="basket-checkout">
+          <!-- d-none / switch-->
           <div id="basket-card" class="basket-card"></div>
+          <!--added basket products-->
           <div id="checkout" class="checkout-section">
             <div class="text-small flex">
               <span>Subtotal</span>
