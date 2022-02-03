@@ -31,8 +31,9 @@
 .section-address {
   height: 20px;
   display: flex;
+  margin-right: 80px;
   align-items: center;
-  justify-content: ;
+  justify-content: center;
   border-bottom: solid 2px;
   font-size: 14px;
   cursor: pointer;
@@ -408,6 +409,7 @@ aside .section-header span {
 }
 
 .basket-section p {
+  text-align: center;
   font-weight: bold;
   padding: 15px;
 }
@@ -416,6 +418,83 @@ aside .section-header span {
   color: #6a6a6a;
   font-size: 14px;
   text-align: center;
+}
+
+.d-none {
+  display: none;
+}
+
+.basket-checkout {
+  padding: 20px;
+  height: 50vh;
+  width: 100%;
+}
+
+.added-menu {
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #dad9d8;
+
+}
+
+.menu b {
+  color: #0a3847;
+  font-size: 12px
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.text-small {
+  font-size: 13px;
+  color: #6a6a6a;
+}
+
+.endprice {
+  color: #0a3847;
+  font-size: 13px;
+
+}
+
+.add-node a {
+  font-size: 13px;
+  padding-left: 10px;
+}
+
+.add-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  border: 1px solid lightgrey;
+  text-align: center;
+  margin: 2px;
+  transition: all 225ms ease-in-out;
+}
+
+.add-box:hover {
+  border: #076dfc 1px solid;
+  transition: all 225ms ease-in-out;
+}
+
+.add-box i {
+  color: #0a3847;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+button {
+  margin: 10px 0;
+  border-radius: 5px;
+  color: white;
+  width: 100%;
+  padding: 20px;
+  background-color: #076dfc;
 }
 
 /*! ******************** X ASIDE X *********************/

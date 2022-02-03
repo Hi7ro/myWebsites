@@ -11,7 +11,7 @@
   <script src="https://kit.fontawesome.com/d5e19df7f3.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onload="init()">
   <header>
     <nav id="navbar">
       <div class="section-brand">
@@ -336,7 +336,24 @@
           <p>Fill your basket</p>
           <span>Add some tasty food from the menu and order your food.</span>
         </div>
-
+        <div id="basket-checkout" class="basket-checkout d-none">
+          <div id="basket-card" class="basket-card"></div>
+          <div id="checkout" class="checkout-section">
+            <div class="text-small flex">
+              <span>Subtotal</span>
+              <span id="subtotal">4,90€</span>
+            </div>
+            <div class="text-small flex">
+              <span>Delivery costs</span>
+              <span>Free</span>
+            </div>
+            <div class="endprice flex">
+              <b><span>Total</span></b>
+              <b><span id="endprice">4,90€</span></b>
+            </div>
+            <button>Checkout <span>(4,90€)</span></button>
+          </div>
+        </div>
       </div>
 
 
